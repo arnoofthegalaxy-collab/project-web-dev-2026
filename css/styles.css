@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  height: 100%;
   box-sizing: border-box;
 }
 
@@ -121,15 +120,16 @@ body.about-page main {
   background-repeat: no-repeat;
   color: white;
   font-family: Arial, sans-serif;
+  height: 100%;
 }
 
 .gamep2body {
     background-image: url("https://static.wikia.nocookie.net/hello-yoshi/images/9/9f/Final_Halloween_horror.PNG/revision/latest?cb=20181029200216");
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     color: white;
     font-family: Arial, sans-serif;
+    height: 100%;
 }
 
 .text-box {
