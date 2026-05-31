@@ -1,45 +1,12 @@
-// Basis JavaScript bestand voor de gamepagina
+var speler = "";
 
-function updateGameMessage(text) {
-  const message = document.getElementById('gameMessage');
-  if (message) {
-    message.textContent = text;
+function startspel(){
+  speler = document.getElementById("naam");
+  if (speler.value.trim() === "") {
+    alert("Voer je naam in!");
+    return;
   }
+  var naam = speler.value.trim();
+  alert("Welkom, " + naam + "! Klik op OK om te beginnen.");
+  window.location.href = "gamep2.html";
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-  const scoreButton = document.getElementById('scoreButton');
-  const scoreValue = document.getElementById('scoreValue');
-  const nameForm = document.getElementById('nameForm');
-  const levelSelect = document.getElementById('levelSelect');
-  const soundCheckbox = document.getElementById('soundCheckbox');
-  const colorInput = document.getElementById('colorInput');
-  const speedRange = document.getElementById('speedRange');
-
-  let score = 0;
-
-  if (scoreButton && scoreValue) {
-    scoreButton.addEventListener('click', () => {
-      score += 10;
-      scoreValue.textContent = score;
-      updateGameMessage(`Je hebt nu ${score} punten.`);
-    });
-  }
-
-  if (nameForm) {
-    nameForm.addEventListener('submit', (event) => {
-      event.preventDefault();
-      const playerName = document.getElementById('playerName').value.trim() || 'speler';
-      updateGameMessage(`Hallo ${playerName}, je speelt op ${levelSelect.value} met snelheid ${speedRange.value}.`);
-    });
-  }
-
-  const inputs = [levelSelect, soundCheckbox, colorInput, speedRange];
-  inputs.forEach((input) => {
-    if (input) {
-      input.addEventListener('input', () => {
-        updateGameMessage(`Level: ${levelSelect.value}, geluid: ${soundCheckbox.checked ? 'aan' : 'uit'}, kleur: ${colorInput.value}, snelheid: ${speedRange.value}.`);
-      });
-    }
-  });
-});
