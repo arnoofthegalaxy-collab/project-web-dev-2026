@@ -31,13 +31,14 @@ header p {
 }
 
 nav {
-  background-color: #999999;
+
   overflow: hidden;
   text-align: center;
   padding: 10px;
 }
 
 nav a {
+   background-color: #999999;
   color: #333;
   text-decoration: none;
   padding: 8px 15px;
