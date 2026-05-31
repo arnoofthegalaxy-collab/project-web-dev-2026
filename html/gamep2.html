@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Horror</title>
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+        }
+
+        body {
+            background-image: url("https://static.wikia.nocookie.net/hello-yoshi/images/9/9f/Final_Halloween_horror.PNG/revision/latest?cb=20181029200216");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .text-box {
+            position: absolute;
+            left: calc(46.5% - 2px);
+            top: calc(60% + 75px);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+
+        .btn-white {
+            background: rgba(128, 128, 128, 0.9);
+            color: black;
+        }
+
+        .btn-animate {
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .btn-animate:hover {
+            transform: translateY(-3px);
+            background-color: rgba(255, 255, 255, 1);
+        }
+    </style>
+</head>
+<body>
+    <div class="text-box">
+        <a href="Pagina1.html" class="btn btn-white btn-animate">Exit</a>
+    </div>
+</body>
+</html>

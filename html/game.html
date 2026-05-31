@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>haunted LuigiMansion</title>
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+        }
+
+        body {
+            background-image: url("https://mario.wiki.gallery/images/thumb/c/c5/LuigiMansion.png/1200px-LuigiMansion.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .text-box {
+            position: absolute;
+            left: 49%;
+            top: 65%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+
+        .btn-white {
+            background: rgba(128, 128, 128, 0.9);
+            color: black;
+        }
+
+        .btn-animate {
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .btn-animate:hover {
+            transform: translateY(-3px);
+            background-color: rgba(255, 255, 255, 1);
+        }
+    </style>
+</head>
+<body>
+    <div class="text-box">
+        <a href="gamep2.html" class="btn btn-white btn-animate">Enter</a>
+    </div>
+</body>
+</html>
