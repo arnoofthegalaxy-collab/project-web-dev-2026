@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  height: 100%;
   box-sizing: border-box;
 }
 
@@ -111,4 +112,53 @@ body.about-page main {
   gap: 10px;
   margin-top: 20px;
   flex-wrap: wrap;
+}
+
+.gamebody {
+  background-image: url("https://mario.wiki.gallery/images/thumb/c/c5/LuigiMansion.png/1200px-LuigiMansion.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.gamep2body {
+    background-image: url("https://static.wikia.nocookie.net/hello-yoshi/images/9/9f/Final_Halloween_horror.PNG/revision/latest?cb=20181029200216");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.text-box {
+    position: absolute;
+    left: 49%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.btn-white {
+    background: rgba(128, 128, 128, 0.9);
+    color: black;
+}
+
+.btn-animate {
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-animate:hover {
+    transform: translateY(-3px);
+    background-color: rgba(255, 255, 255, 1);
 }
