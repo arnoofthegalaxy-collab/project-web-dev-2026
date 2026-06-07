@@ -159,7 +159,7 @@ body.about-page main {
 
 /* Stijl voor de ghost knop in het spel*/
 .btn-ghost {
-  background-image: url(/media/ghost.webp);  /* komt van https://luigi-mansion.fandom.com/ */
+  background-image: url(../media/ghost.webp);  /* komt van https://luigi-mansion.fandom.com/ */
   background-size: cover;
   background-repeat: no-repeat;
   border: 2px solid greenyellow;
@@ -170,7 +170,7 @@ body.about-page main {
 }
 
 .btn-ghost10 {
-  background-image: url(/media/ghost10.webp);  /* komt van https://luigi-mansion.fandom.com/ */
+  background-image: url(../media/ghost10.webp);  /* komt van https://luigi-mansion.fandom.com/ */
   background-size: cover;
   background-repeat: no-repeat;
   border: 2px solid greenyellow;
