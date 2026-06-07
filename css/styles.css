@@ -1,50 +1,51 @@
-/* Basis CSS */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/*
+  Elementen voor de body zodat deze steeds hetzelfde blijft, zoals achtergrondkleur en lettertype.
+  Daarnaast stijlen voor header, nav, main en footer.
+  Ook stijlen voor afbeeldingen en specifieke stijlen voor de gamepagina's en knoppen.
+*/
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
+  margin: 0;
+  height: 100vh;
   background-color: #999999;
+  font-family: Arial, sans-serif;
 }
 
 header {
-  background-color: #999999;
   color: #333;
   padding: 20px;
   text-align: center;
 }
 
+/* Dit is voor het h1 element in de header */
 header h1 {
   margin: 10px 0;
   color: #333;
 }
 
+/* Dit is voor het p element in de header */
 header p {
   font-size: 14px;
   color: #333;
 }
 
 nav {
-
   overflow: hidden;
   text-align: center;
   padding: 10px;
+  position: fixed;
+  top: 0px;
 }
 
+/* Dit is voor de link elementen in de nav */
 nav a {
-   background-color: #999999;
+  background-color: #999999;
   color: #333;
   text-decoration: none;
   padding: 8px 15px;
   display: inline-block;
 }
 
+/* Als je over een linkl komt veranderd de achtergrond kleur*/
 nav a:hover {
   background-color: #777777;
 }
@@ -52,16 +53,15 @@ nav a:hover {
 main {
   max-width: 900px;
   margin: 20px auto;
-  background-color: #999999;
   padding: 20px;
 }
 
 footer {
-  background-color: #999999;
+  max-width: 900px;
   color: white;
   text-align: center;
-  padding: 20px;
-  margin-top: 30px;
+  padding: 10px;
+  margin-top: 20px;
 }
 
 footer table {
@@ -70,7 +70,8 @@ footer table {
   margin-top: 10px;
 }
 
-footer th, footer td {
+footer th,
+footer td {
   border: 1px solid #555;
   padding: 10px;
   text-align: left;
@@ -84,24 +85,13 @@ footer td {
   color: #000;
 }
 
-.btn {
-  background-color: #666;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  display: inline-block;
-  margin: 10px 5px;
-}
-
-.btn:hover {
-  background-color: #555;
-}
 
 img {
   max-width: 100%;
   height: auto;
 }
 
+/* Dit is enkel voor de about pagina*/
 body.about-page main {
   text-align: center;
 }
@@ -119,47 +109,92 @@ body.about-page main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white;
-  font-family: Arial, sans-serif;
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .gamep2body {
-    background-image: url("https://static.wikia.nocookie.net/hello-yoshi/images/9/9f/Final_Halloween_horror.PNG/revision/latest?cb=20181029200216");
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    font-family: Arial, sans-serif;
-    height: 100%;
+  background-image: url("https://static.wikia.nocookie.net/hello-yoshi/images/9/9f/Final_Halloween_horror.PNG/revision/latest?cb=20181029200216");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-box {
-    position: absolute;
-    left: 49%;
-    top: 65%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+  position: absolute;
+  left: 46.5%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
 }
 
 .btn {
-    display: inline-block;
-    padding: 8px 16px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 700;
-    letter-spacing: 0.05em;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  cursor: grabbing;
 }
 
 .btn-white {
-    background: rgba(128, 128, 128, 0.9);
-    color: black;
+  background: rgba(128, 128, 128, 0.9);
+  color: black;
 }
 
 .btn-animate {
-    transition: transform 0.2s ease, background-color 0.2s ease;
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .btn-animate:hover {
-    transform: translateY(-3px);
-    background-color: rgba(255, 255, 255, 1);
+  transform: translateY(-3px);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* Stijl voor de ghost knop in het spel*/
+.btn-ghost {
+  background-image: url(/media/ghost.webp);  /* komt van https://luigi-mansion.fandom.com/ */
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid greenyellow;
+  border-radius: 30%;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.btn-ghost10 {
+  background-image: url(/media/ghost10.webp);  /* komt van https://luigi-mansion.fandom.com/ */
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid greenyellow;
+  border-radius: 30%;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.gameghost {
+  position: absolute;
+  left: 25%;
+  top: 38%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.gameghost10 {
+  position: absolute;
+  right: 25%;
+  top: 38%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  visibility: hidden;
 }
