@@ -32,7 +32,7 @@ function verhoogScore() {
 
 /*
  Deze functie verhoogt de score met 10 punten en werkt vervolgens de weergegeven score bij in een element met id "score".
- */ 
+ */
 function verhoogScore10() {
   score += 10;
   document.getElementById("score").textContent = "Score: " + score;

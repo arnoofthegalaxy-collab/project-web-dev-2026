@@ -28,6 +28,8 @@ header p {
   color: #333;
 }
 
+/* Dit is voor de nav element, deze zorgt ervoor dat de navigatie altijd bovenaan blijft staan en gecentreerd is.
+*/
 nav {
   overflow: hidden;
   text-align: center;
@@ -50,6 +52,8 @@ nav a:hover {
   background-color: #777777;
 }
 
+/* Dit is voor het main element en zorgt ervoor dat de inhoud gecentreerd is en een maximale breedte heeft.
+*/
 main {
   max-width: 900px;
   margin: 20px auto;
@@ -96,19 +100,26 @@ body.about-page main {
   text-align: center;
 }
 
+/* Stijl voor de sectie met links op de about pagina dit zorgt ervoor dat de links naast elkaar staan en er ruimte tussen zit.
+*/
 .links-section {
   display: flex;
+  /*zorgt ervoor dat de links naast elkaar staan*/
   justify-content: center;
   gap: 10px;
   margin-top: 20px;
   flex-wrap: wrap;
+  /*zorgt ervoor dat de links op een nieuwe regel komen als er niet genoeg ruimte is*/
 }
 
+/* Stijlen voor de gamepagina's met achtergronden en positionering van elementen.
+*/
 .gamebody {
   background-image: url("https://mario.wiki.gallery/images/thumb/c/c5/LuigiMansion.png/1200px-LuigiMansion.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /*zorgt ervoor dat de achtergrond niet herhaald wordt*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,6 +130,7 @@ body.about-page main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /*zorgt ervoor dat de achtergrond niet herhaald wordt*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,6 +138,7 @@ body.about-page main {
 
 .text-box {
   position: absolute;
+  /*zorgt ervoor dat de tekst op een specifieke plek op de pagina staat*/
   left: 46.5%;
   top: 65%;
   transform: translate(-50%, -50%);
@@ -133,16 +146,25 @@ body.about-page main {
   color: white;
 }
 
+/* Stijl voor de knoppen in het spel, deze hebben een ronde vorm en een hand cursor wanneer je eroverheen gaat.
+*/
 .btn {
   display: inline-block;
+  /*zorgt ervoor dat de knoppen naast elkaar staanr*/
   padding: 8px 16px;
+  /*zorgt voor de ruimte binnen de knoppen*/
   border-radius: 30px;
+  /*zorgt voor de ronde vorm van de knoppen*/
   text-decoration: none;
+  /*verwijdert de standaard onderstreping van links*/
   font-weight: 700;
+  /*zorgt ervoor dat de tekst in de knoppen vetgedrukt is*/
   letter-spacing: 0.05em;
   cursor: grabbing;
 }
 
+/* Stijl voor de witte knoppen in het spel, deze hebben een transparante achtergrond en zwarte tekst.
+*/
 .btn-white {
   background: rgba(128, 128, 128, 0.9);
   color: black;
@@ -150,16 +172,21 @@ body.about-page main {
 
 .btn-animate {
   transition: transform 0.2s ease, background-color 0.2s ease;
+  /*gevonden op https://dev.to/webdeasy/top-20-css-buttons-animations-f41 */
 }
 
+/* Wanneer je over de knop gaat is er een animatie van de knop (gevonden op https://dev.to/webdeasy/top-20-css-buttons-animations-f41) */
 .btn-animate:hover {
   transform: translateY(-3px);
+  /*zorgt ervoor dat de knop omhoog gaat wanneer je eroverheen hovert*/
   background-color: rgba(255, 255, 255, 1);
+  /*verandert de achtergrondkleur van de knop naar wit*/
 }
 
-/* Stijl voor de ghost knop in het spel*/
+/* Stijl voor de normale ghost knop in het spel*/
 .btn-ghost {
-  background-image: url(../media/ghost.webp);  /* komt van https://luigi-mansion.fandom.com/ */
+  background-image: url(../media/ghost.webp);
+  /* komt van https://luigi-mansion.fandom.com/ */
   background-size: cover;
   background-repeat: no-repeat;
   border: 2px solid greenyellow;
@@ -169,8 +196,11 @@ body.about-page main {
   cursor: pointer;
 }
 
+/* Stijl voor de ghost10 knop in het spel, deze heeft een andere afbeelding dus daarom ook aparte CSS code.
+*/
 .btn-ghost10 {
-  background-image: url(../media/ghost10.webp);  /* komt van https://luigi-mansion.fandom.com/ */
+  background-image: url(../media/ghost10.webp);
+  /* komt van https://luigi-mansion.fandom.com/ */
   background-size: cover;
   background-repeat: no-repeat;
   border: 2px solid greenyellow;
@@ -189,11 +219,15 @@ body.about-page main {
   color: white;
 }
 
+/* Dit is voor de ghost10 knop die op een andere plek staat en een andere afbeelding heeft daarom heeft deze een eigen klasse gekregen.
+*/
 .gameghost10 {
   position: absolute;
+  /*zorgt ervoor dat de tekst op een specifieke plek op de pagina staat*/
   right: 25%;
   top: 38%;
   transform: translate(-50%, -50%);
+  /*zorgt ervoor dat de tekst precies in het midden van de knop staat*/
   text-align: center;
   color: white;
   visibility: hidden;
